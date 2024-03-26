@@ -18,5 +18,7 @@ export const AsideContainer = styled.aside`
     display: flex;
     align-items: center;
     gap: 4px;
+
+    background-color: ${(props) => props.theme['purple-light']};
   }
 `
