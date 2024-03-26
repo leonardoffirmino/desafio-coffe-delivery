@@ -9,3 +9,14 @@ export const HeaderContainer = styled.header`
   padding: 32px 30px;
   margin: 0 auto;
 `
+
+export const AsideContainer = styled.aside`
+  display: flex;
+  gap: 12px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+`
