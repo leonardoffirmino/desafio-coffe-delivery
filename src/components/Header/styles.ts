@@ -5,20 +5,50 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  max-width: 1440px;
-  padding: 32px 30px;
+  max-width: 80rem;
+  padding: 2rem 1.8rem;
   margin: 0 auto;
 `
 
 export const AsideContainer = styled.aside`
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
 
   div {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.25rem;
 
     background-color: ${(props) => props.theme['purple-light']};
+
+    svg {
+      color: ${(props) => props.theme.purple};
+    }
+
+    span {
+      color: ${(props) => props.theme['purple-dark']};
+    }
+
+    padding: 0.8rem;
+    border-radius: 6px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+
+    background-color: ${(props) => props.theme['yellow-light']};
+    color: ${(props) => props.theme['yellow-dark']};
+
+    padding: 0.8rem;
+    border-radius: 6px;
+
+    position: relative;
+
+    span {
+      font-weight: bold;
+      background-color: ${(props) => props.theme['yellow-dark']};
+      color: ${(props) => props.theme.white};
+    }
   }
 `

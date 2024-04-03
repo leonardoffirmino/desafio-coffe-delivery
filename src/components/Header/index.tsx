@@ -2,6 +2,8 @@ import { AsideContainer, HeaderContainer } from './styles'
 import logoCoffee from '../../assets/logo.svg'
 import { MapPin, ShoppingCart } from 'phosphor-react'
 
+import { Link } from 'react-router-dom'
+
 export function Header() {
   return (
     <HeaderContainer>
@@ -16,10 +18,10 @@ export function Header() {
           <span>São paulo, SP</span>
         </div>
 
-        <section>
+        <Link to="..">
           <ShoppingCart size={22} weight="fill" />
           <span></span>
-        </section>
+        </Link>
       </AsideContainer>
     </HeaderContainer>
   )
