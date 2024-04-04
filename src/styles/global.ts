@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { mixins } from './fontMixed'
 
 export const GlobalStyled = createGlobalStyle`
   *{
@@ -8,9 +9,20 @@ export const GlobalStyled = createGlobalStyle`
   }
 
   body{
-    background: ${(props) => props.theme.colors.background};
+    background: ${(props) => props.theme.background};
+    color: ${(props) => props.theme['base-text']}; 
     -webkit-font-smoothing: antialiased;
 
+  }
+
+
+  body,input,textarea, button{
+    ${mixins.fonts.textM};
+  }
+
+  button{
+    border:none;
+    cursor:pointer;
   }
 
 

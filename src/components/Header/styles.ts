@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { mixins } from '../../styles/fontMixed'
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -27,6 +28,7 @@ export const AsideContainer = styled.aside`
 
     span {
       color: ${(props) => props.theme['purple-dark']};
+      ${mixins.fonts.textS};
     }
 
     padding: 0.8rem;
@@ -45,10 +47,26 @@ export const AsideContainer = styled.aside`
 
     position: relative;
 
+    &[aria-disabled='true'] {
+      pointer-events: none;
+    }
+
     span {
+      ${mixins.fonts.textS};
       font-weight: bold;
       background-color: ${(props) => props.theme['yellow-dark']};
       color: ${(props) => props.theme.white};
+      border-radius: 50%;
+      width: 1.25rem;
+      height: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      transform: translate(50%, -50%);
     }
   }
 `
