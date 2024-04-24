@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { mixins } from '../../styles/fontMixed'
 
 export const Hero = styled.section`
   position: relative;
@@ -14,7 +15,7 @@ export const Hero = styled.section`
 `
 
 export const HomeContainer = styled.div`
-  max-width: 1160px;
+  max-width: 72.5rem;
   padding: 92px 20px;
   margin: 0 auto;
 
@@ -58,4 +59,24 @@ export const InfoMain = styled.div`
     }
   }
 `
-export const CoffeeList = styled.section``
+export const CoffeList = styled.section`
+  max-width: 72.5rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 10rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  h2 {
+    ${mixins.fonts.titleL}
+    color:
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 2.5rem;
+    grid-column-gap: 2rem;
+  }
+`

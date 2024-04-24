@@ -1,7 +1,9 @@
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
-import { Hero, HomeContainer, Heading, InfoMain } from './styles'
+import { Hero, HomeContainer, Heading, InfoMain, CoffeList } from './styles'
 
-import logMainCoffee from '../../assets/coffe-home.svg'
+import { coffes } from '../../../src/data.json'
+
+import logoMainCoffee from '../../assets/coffe-home.svg'
 import background from '../../assets/background.svg'
 
 export function Home() {
@@ -45,7 +47,7 @@ export function Home() {
             </InfoMain>
           </div>
           <img
-            src={logMainCoffee}
+            src={logoMainCoffee}
             alt="Copo de café branco com bordas pretas com grãos de café em volta."
           />
         </HomeContainer>
@@ -55,6 +57,14 @@ export function Home() {
           id="hero-bg"
         />
       </Hero>
+
+      <CoffeList>
+        <h2>Nossos cafés</h2>
+
+        {coffes.map((coffe) => (
+          <Card key={coffe.id} coffe={coffe} />
+        ))}
+      </CoffeList>
     </div>
   )
 }
