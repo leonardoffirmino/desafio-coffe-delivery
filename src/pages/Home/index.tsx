@@ -1,8 +1,6 @@
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 import { Hero, HomeContainer, Heading, InfoMain, CoffeList } from './styles'
 
-import { coffes } from '../../../src/data.json'
-
 import logoMainCoffee from '../../assets/coffe-home.svg'
 import background from '../../assets/background.svg'
 
@@ -60,10 +58,6 @@ export function Home() {
 
       <CoffeList>
         <h2>Nossos cafés</h2>
-
-        {coffes.map((coffe) => (
-          <Card key={coffe.id} coffe={coffe} />
-        ))}
       </CoffeList>
     </div>
   )
