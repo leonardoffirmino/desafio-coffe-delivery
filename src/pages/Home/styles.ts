@@ -73,10 +73,11 @@ export const CoffeList = styled.section`
     color:
   }
 
-  div {
+ {/* div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 2.5rem;
     grid-column-gap: 2rem;
   }
+*/}
 `

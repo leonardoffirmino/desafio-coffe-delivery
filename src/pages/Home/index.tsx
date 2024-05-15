@@ -3,6 +3,7 @@ import { Hero, HomeContainer, Heading, InfoMain, CoffeList } from './styles'
 
 import logoMainCoffee from '../../assets/coffe-home.svg'
 import background from '../../assets/background.svg'
+import { Card } from '../../components/Card'
 
 export function Home() {
   return (
@@ -58,6 +59,8 @@ export function Home() {
 
       <CoffeList>
         <h2>Nossos cafés</h2>
+
+        <Card />
       </CoffeList>
     </div>
   )
