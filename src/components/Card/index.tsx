@@ -7,9 +7,11 @@ import {
   Price,
   Tags,
   Title,
-} from './styles'
+} from './style'
 
 import americanoCoffe from '../../assets/coffes/americano.png'
+import { QuantityItem } from '../Form/QuantityItem/Index'
+import { ShoppingCart } from 'phosphor-react'
 
 export function Card() {
   return (
@@ -32,7 +34,13 @@ export function Card() {
           <span>9,09</span>
         </Price>
 
-        <Order></Order>
+        <Order>
+          <QuantityItem />
+
+          <button>
+            <ShoppingCart size={22} color="white" />
+          </button>
+        </Order>
       </ItemControl>
     </CardContainer>
   )

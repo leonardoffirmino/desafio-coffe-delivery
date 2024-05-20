@@ -1,4 +1,4 @@
-import { AsideContainer, HeaderContainer } from './styles'
+import { AsideContainer, HeaderContainer } from './style'
 import logoCoffee from '../../assets/logo.svg'
 import { MapPin, ShoppingCart } from 'phosphor-react'
 

@@ -1,5 +1,5 @@
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
-import { Hero, HomeContainer, Heading, InfoMain, CoffeList } from './styles'
+import { Hero, HomeContainer, Heading, InfoMain, CoffeList } from './style'
 
 import logoMainCoffee from '../../assets/coffe-home.svg'
 import background from '../../assets/background.svg'
